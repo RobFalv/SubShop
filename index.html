@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Subs.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Open Sans", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/Sub1.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#specials" class="w3-bar-item w3-button">SPECIALS</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 11am to 8pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small w3-black" style="font-size:100px">Best<br>SUBS AROUND</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Subs');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue-gray">Subs</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Salads');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue-gray">Salads</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-blue-gray">Starter</div>
+      </a>
+    </div>
+
+    <div id="Subs" class="w3-container menu w3-padding-20 w3-gray">
+      <h2><b>Meatball</b><span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h2>
+      <h2>sauce, fresh bread, fresh meat. A clasic meatball sub.</h2>
+      <hr>
+   
+      <h2><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h2>
+      <h2>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</h2>
+      <hr>
+      
+      <h2><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h2>
+      <h2>Fresh tomatoes, mozzarella, chicken, onions</h2>
+      <hr>
+
+      <h2><b>Meat Town</b> <span class="w3-tag w3-flat-pomegranate w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h2>
+      <h2>All the best meats in one sandwich</h2>
+      </div>
+
+    <div id="Salads" class="w3-container menu w3-padding-20 w3-gray">
+      <h2><b>Chicken Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h2>
+      <h2>Fresh greens with fresh cut chicken</h2>
+      <hr>
+
+      <h2><b>Ceasar Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h2>
+      <h2>personal take on a ceasar salad</h2>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-20 w3-gray">
+      <h2><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <h2>Ask the waiter</h2>
+      <hr>
+   
+      <h2><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h2>
+      <h2>Bread with pesto, tomatoes, onion, garlic</h2>
+      <hr>
+      
+      <h2><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h2>
+      <h2>Grilled ciabatta, garlic butter, onions</h2>
+      <hr>
+      
+      <h2><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h2>
+      <h2>Tomatoes and mozzarella</h2>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- specials Container -->
+<div class="w3-container w3-padding-64 w3-gray w3-grayscale w3-xlarge" id="specials">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">  <span class="w3-tag w3-xlarge w3-padding w3-flat-pomegranate" style="transform:rotate(10deg)">Super</span>   SPECIALS</h1>
+    <h1><b>This Weeks Special,</b></h1>
+    <h1><b><i>THE CHILI MAC</i></b></h1>
+    <div class="w3-panel w3-flat-pomegranate w3-round-large w3-display-container">
+      <span onclick="this.parentElement.style.display='none'"
+      class="w3-button w3-large w3-display-topright w3-flat-pomegranate">&times;</span><!---Cool Pop-up-->
+      <h3>Limited Time!!!</h3>
+      <p>Our specials only last about a week, but dont fret as they may come back soon!</p>
+    </div>
+    <img src="images/Chili Mac.jpg" style="width:100%"  class="w3-round-xlarge" alt="Restaurant"> <!--Made it round as it looks nice-->
+
+
+    
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-flat-pomegranate w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>The Sub Restaurant was founded by Mr. Sub Way in 1989 taking the sub world by storm. We are proud to be continuing the legacy selling the best sanwiches around.</p>
+    <p><strong>The Chef?</strong> Mr. Sub Way himself<img src="images/SharkSub.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our interiors.</p>
+    <img src="images/Sub-Shop-Logo-600x429.png" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="images/overhead.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at some address at some place or call us at 05050515-122330</p>
+    <p><span class="w3-tag">FYI!</span> We need at least an hour notice for orders over 10 subs, and a day for orders larger then 30.</p>
+    <p class="w3-xxlarge"><strong>Order</strong> a sandwich, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border w3-flat-silver" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border w3-flat-silver" type="number" placeholder="How many sandwiches" required name="sandwiches"></p>
+      <p><input class="w3-input w3-padding-16 w3-border w3-flat-silver" type="number" placeholder="What type of sandwiches" required name="Type"></p>
+      <p><input class="w3-input w3-padding-16 w3-border w3-flat-silver" type="datetime-local" placeholder="Date and time" required name="date" value="2023-01-19T12:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border w3-flat-silver" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-dark-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Website by : Robert - Web Design Class WHS</p>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
